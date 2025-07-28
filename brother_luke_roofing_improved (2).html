@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--
+  Improved single‑page website for Brother Luke Roofing & Construction
+  This revision adds a navigation bar for easier section jumps, removes image elements
+  entirely, enhances SEO/social tags, and includes structured data for a local business.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Updated title to include target keywords for better search visibility -->
+  <title>Roofing Contractor in Yarmouth, Nova Scotia | Brother Luke Roofing &amp; Construction</title>
+  <!-- SEO meta tags -->
+  <!-- Description now includes key phrases people might search for such as roofing, roof repair and Yarmouth -->
+  <meta name="description" content="Local roofing contractor in Yarmouth, Nova Scotia. We specialize in asphalt shingle installation, roof repairs, replacements and emergency leak fixes. 24+ years of experience. Call for your free quote today." />
+  <!-- Include additional keywords related to roof repairs and Yarmouth -->
+  <meta name="keywords" content="roofing Yarmouth, roof repair Yarmouth, roof replacement Yarmouth, roofing contractor Nova Scotia, asphalt shingles, licensed roofer, local roofer, NS roofing" />
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="Roofing Contractor in Yarmouth, Nova Scotia | Brother Luke Roofing &amp; Construction" />
+  <meta property="og:description" content="Local roofing contractor serving Yarmouth and surrounding communities. Asphalt shingle installation, repairs and replacements with 24+ years of experience." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_CA" />
+  <!-- Twitter Card meta tags -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Roofing Contractor in Yarmouth | Brother Luke Roofing &amp; Construction" />
+  <meta name="twitter:description" content="Asphalt shingle roof installation, repair and replacement in Yarmouth, Nova Scotia. Free quotes." />
+  <!-- Structured data for local business (Schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RoofingContractor",
+    "name": "Brother Luke Roofing & Construction",
+    "url": "https://brotherlukeroofingandconstruction.com/",
+    "areaServed": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Yarmouth",
+        "addressRegion": "NS",
+        "addressCountry": "CA"
+      }
+    },
+    "telephone": "+1-902-746-9192",
+    "email": "brotherlukeroofing@gmail.com",
+    "description": "Licensed asphalt shingle roofing contractor serving Yarmouth and surrounding communities with over 24 years of experience."
+  }
+  </script>
+  <!-- Styling -->
+  <style>
+    :root {
+      --primary-color: #003366;
+      --secondary-color: #00a650;
+      --text-color: #333;
+      --light-bg: #f9f9f9;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    /* Simple top navigation */
+    nav {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 0.75rem 1rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav li {
+      margin: 0 0.75rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
+    header.site-header {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 2.5rem 1rem 2rem;
+      text-align: center;
+    }
+    header.site-header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    header.site-header p {
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 2rem 1rem;
+      background: var(--light-bg);
+    }
+    section:nth-of-type(even) {
+      background: #fff;
+    }
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+    h3 {
+      color: var(--secondary-color);
+      margin: 1.5rem 0 0.5rem;
+      font-size: 1.3rem;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--secondary-color);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 1rem;
+    }
+    .btn:hover,
+    .btn:focus {
+      background: #008f45;
+    }
+    blockquote {
+      font-style: italic;
+      margin: 1rem 0;
+      padding-left: 1rem;
+      border-left: 4px solid var(--primary-color);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #222;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+    /* Responsive tweaks */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav li {
+        margin: 0.5rem 0;
+      }
+      header.site-header h1 {
+        font-size: 1.5rem;
+      }
+      header.site-header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation with anchors for each section -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <!-- Renamed "Testimonials" navigation item to "Reviews" for clarity -->
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="site-header" id="home">
+    <!-- The company name is presented as text only, no image elements are used. -->
+    <h1>Brother Luke Roofing &amp; Construction – Roofing Contractor in Yarmouth</h1>
+    <p>Licensed roofing contractor in Yarmouth, Nova Scotia &amp; surrounding areas — 24+ years experience</p>
+    <p><strong>Free quotes &amp; fair pricing • Done right first time • Always to code • Local &amp; trusted</strong></p>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>With over 24 years of hands‑on, local expertise in asphalt shingle roofing, Brother Luke Roofing &amp; Construction is proud to serve Yarmouth, Nova Scotia and nearby communities.</p>
+        <p>We’re happy to help you with all your roofing needs.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our Asphalt Shingle Roofing Services</h2>
+        <ul>
+          <li>Residential asphalt shingle installation</li>
+          <li>Commercial asphalt shingle roofing</li>
+          <li>Shingle roof repair &amp; replacement</li>
+          <li>Emergency leak fixes</li>
+        </ul>
+        <h3>Why Choose Us</h3>
+        <ul>
+          <li>Fully licensed &amp; insured</li>
+          <li>Family‑owned</li>
+          <li>100% satisfaction guarantee</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Updated section ID to match navigation anchor -->
+    <section id="reviews">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <blockquote>“Great work, no leaks, great to deal with.”</blockquote>
+        <blockquote>“Highly recommend! Roof looks great, no problems.”</blockquote>
+        <blockquote>“Super happy they fixed our leaks.”</blockquote>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Call for Your Free Quote</h2>
+        <p>Serving Yarmouth &amp; surrounding areas. Call us now for a no‑obligation estimate.</p>
+        <p><strong>Phone (James Jacquard):</strong> <a href="tel:+19027469192">902‑746‑9192</a></p>
+        <p><strong>Email:</strong> <a href="mailto:brotherlukeroofing@gmail.com">brotherlukeroofing@gmail.com</a></p>
+        <a href="tel:+19027469192" class="btn">Call Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Brother Luke Roofing &amp; Construction | Serving Yarmouth &amp; surrounding communities</p>
+  </footer>
+</body>
+</html>
